@@ -18,6 +18,20 @@ Using [Composer](http://getcomposer.org):
 
     composer require cebe/pulse-php-discover
 
+Usage
+-----
+
+Run multiple of these and watch them connect to each other:
+
+```
+php test.php
+```
+
+If you have pulse installed in your network it will also take part in the party :)
+
+This is only the discovery protocol so nothing is going to be shared between the nodes, the
+only thing that happens is that they know about each other.
+
 License
 -------
 
