@@ -4,7 +4,7 @@ pulse-php-discover
 A PHP implementation of the [pulse/syncthing](https://ind.ie/pulse) [cluster discovery protocol](https://github.com/syncthing/syncthing/blob/master/protocol/DISCOVERY.md).
 
 **Current status is work in progress, also if it already works in simple local environment it is
-untested for other purpose, may fail and descrtoy data, so use with care!**
+untested for other purpose, may fail and destroy data, so use with care!**
 
 Requirements
 ------------
