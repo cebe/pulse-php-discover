@@ -9,11 +9,17 @@ require(__DIR__ . '/vendor/autoload.php');
 
 $loop = React\EventLoop\Factory::create();
 
+// config
+
+// generates a random node ID, should be replaced with a real hash of the TLS cert
+$id = rtrim(\Base32\Base32::encode(hash('sha256', rand() . microtime(true), true)), '=');
+$servicePort = rand(1337, 32000);
+
 // setup
 
-$discoveryManager = new DiscoveryManager();
+$discoveryManager = new DiscoveryManager($id);
+$discoveryManager->servicePort = $servicePort;
 $discoveryManager->start($loop);
-
 
 
 // TCP Server
@@ -29,7 +35,7 @@ $socket->on('connection', function ($conn) {
         $conn->close();
     });
 });
-$socket->listen(1338);
+$socket->listen($servicePort);
 
 
 $loop->run();

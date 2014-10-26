@@ -19,7 +19,7 @@ class Device
 	 */
 	public function getId($pretty = false)
 	{
-		return $pretty ? preg_replace('/[\w\d]{7}/', '\\1-', $this->_id) : $this->_id;
+		return $pretty ? rtrim(preg_replace('/([\w\d]{7})/', '\\1-', $this->_id), '-') : $this->_id;
 	}
 
 	/**
@@ -69,7 +69,7 @@ class Device
 
 	public function __toString()
 	{
-		$id = \Base32\Base32::decode($this->_id);
+		$id = \Base32\Base32::decode(strtoupper(str_replace('-', '', $this->_id)));
 		return pack('N', strlen($id))
 			 . $id
 			 . pack('N', count($this->_addresses))

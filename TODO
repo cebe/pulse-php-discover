@@ -1,1 +1,3 @@
 make strlen work in 8bit or not env
+
+conform to https://pulse-forum.ind.ie/t/v0-9-0-new-node-id-format/478
