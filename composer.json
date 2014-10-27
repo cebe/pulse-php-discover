@@ -14,8 +14,8 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/cebe/markdown/issues",
-		"source": "https://github.com/cebe/markdown"
+		"issues": "https://github.com/cebe/pulse-php-discover/issues",
+		"source": "https://github.com/cebe/pulse-php-discover"
 	},
 	"require": {
 		"php": ">=5.4.0",
