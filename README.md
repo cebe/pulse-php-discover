@@ -6,6 +6,9 @@ A PHP implementation of the [pulse/syncthing](https://ind.ie/pulse) [cluster dis
 **Current status is work in progress, also if it already works in simple local environment it is
 untested for other purpose, may fail and destroy data, so use with care!**
 
+[![Latest Stable Version](https://poser.pugx.org/cebe/pulse-php-discover/v/stable.png)](https://packagist.org/packages/cebe/pulse-php-discover)
+[![Total Downloads](https://poser.pugx.org/cebe/pulse-php-discover/downloads.png)](https://packagist.org/packages/cebe/pulse-php-discover)
+
 Requirements
 ------------
 
